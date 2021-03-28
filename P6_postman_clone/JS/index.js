@@ -23,6 +23,9 @@ const submit = document.getElementById('submit');
 // Grabbing response area
 const responseArea = document.getElementById('responseArea');
 
+// Set default URL
+urlField.value = "https://jsonplaceholder.typicode.com/posts";
+
 // Hiding Boxes initially
 parameterBox.style.display = 'none';
 jsonBox.style.display = 'none';

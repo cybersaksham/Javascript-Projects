@@ -47,6 +47,7 @@ requestType.addEventListener('click', () => {
     if (request == 1) {
         contentTypeBox.style.display = 'none';
         parameterBox.style.display = 'none';
+        params.style.display = 'none';
         jsonBox.style.display = 'none';
     } else if (request == 2) {
         contentTypeBox.style.display = 'block';

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Javascript Projects</title>
+</head>
+
+<body>
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./P1_create_notes/">Notes App</a></li>
+                            <li><a class="dropdown-item" href="./P2_college_library/">College Library</a></li>
+                            <li><a class="dropdown-item" href="./P3_news_website/">News Website</a></li>
+                            <li><a class="dropdown-item" href="./P4_form_validation/">Form Validation</a></li>
+                            <li><a class="dropdown-item" href="./P5_cv_screener/">CV Screener</a></li>
+                            <li><a class="dropdown-item" href="./P6_postman_clone/">Postman Clone</a></li>
+                            <li><a class="dropdown-item" href="./P7_calculator/">Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects -->
+    <div class="container my-3 px-5">
+        <h3>My Projects</h3>
+        <hr>
+        <h5 id="nothing">No project matched</h5>
+        <div class="accordion" id="accordionExample">
+            <div id="project1" class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        Notes App
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 1:</strong> It is a webpage where you can make your notes with title or without title. The notes are stored in local storage, so on reloading page notes will not disappear. You can delete your notes manually. You can search through you notes also by a search bar available in navigation bar.
+                    </div>
+                </div>
+            </div>
+            <div id="project2" class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        College Library
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 2:</strong> It is a webpage where you can add books. The books are not stored in local storage, so on reloading page books will disappear. This project has two html files made by prototypr javascript & Es6 javascript. But both work same.
+                    </div>
+                </div>
+            </div>
+            <div id="project3" class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        News Website
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 3:</strong> It is a webpage which uses AZAX to fetch current news from a news website & display it in DOM.
+                    </div>
+                </div>
+            </div>
+            <div id="project4" class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Form Validation
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 4:</strong> It is a webpage which contains a form. It uses regular expressions to check your inputs & show error if you entered incorrect format of name, email, phone no etc fields.
+                    </div>
+                </div>
+            </div>
+            <div id="project5" class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        CV Screener
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 5:</strong> It is a webpage which uses iterators to iterate through some candidates. you can read their details with their profile picture. This project can be used with fetch api to scan CV of candidates.
+                    </div>
+                </div>
+            </div>
+            <div id="project6" class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        Postman Clone
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 6:</strong> It is a webpage which is a clone of postman software. You can enter URL & send GET or POST request accordingly. A response box will appear on submitting which shows the response.
+                    </div>
+                </div>
+            </div>
+            <div id="project7" class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        Calculator
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Project 7:</strong> It is a webpage which contains a calculator. Here you can perform simple mathematical operations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+<script src="./JS/script.js"></script>
+
+</html>

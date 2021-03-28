@@ -1,0 +1,36 @@
+.container {
+    margin: 20px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+input {
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-align: right;
+    background-color: white;
+}
+
+.keys {
+    font-size: 20px;
+    background-color: #b0c2c9;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+}
+
+#calculator {
+    display: inline-block;
+    background-color: #a821d2;
+    padding: 20px;
+    border-radius: 20px;
+}

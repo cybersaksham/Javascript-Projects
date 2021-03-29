@@ -12,6 +12,11 @@
 
     <title>Postman Clone</title>
     <link rel="stylesheet" href="./CSS/prism.css">
+    <style>
+        #p6 {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,16 +36,11 @@
                             Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../P6_postman_clone/">Postman Clone</a></li>
+                            <li><a class="dropdown-item" href="./">Postman Clone</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="../P1_create_notes/">Notes App</a></li>
-                            <li><a class="dropdown-item" href="../P2_college_library/">College Library</a></li>
-                            <li><a class="dropdown-item" href="../P3_news_website/">News Website</a></li>
-                            <li><a class="dropdown-item" href="../P4_form_validation/">Form Validation</a></li>
-                            <li><a class="dropdown-item" href="../P5_cv_screener/">CV Screener</a></li>
-                            <li><a class="dropdown-item" href="../P7_calculator/">Calculator</a></li>
+                            <div id="projectList"></div>
                         </ul>
                     </li>
                 </ul>
@@ -137,5 +137,6 @@
 </body>
 <script src="./JS/index.js"></script>
 <script src="./JS/prism.js"></script>
+<script src="../JS/addProject1.js"></script>
 
 </html>

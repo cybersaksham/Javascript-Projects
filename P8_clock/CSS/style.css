@@ -37,6 +37,17 @@
     left: 49.65%;
 }
 
+#secondLeg {
+    position: absolute;
+    height: 10%;
+    width: 2%;
+    z-index: 5;
+    top: 39.4%;
+    left: 49.1%;
+    transform-origin: bottom;
+    background-color: #6294d8;
+}
+
 #center {
     position: absolute;
     height: 3%;

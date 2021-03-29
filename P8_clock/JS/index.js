@@ -2,6 +2,7 @@
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
+let secondLeg = document.getElementById('secondLeg');
 
 let time = document.getElementById('time');
 
@@ -47,6 +48,7 @@ function showClock() {
     hour.style.transform = `rotate(${hRot}deg)`;
     minute.style.transform = `rotate(${mRot}deg)`;
     second.style.transform = `rotate(${sRot}deg)`;
+    secondLeg.style.transform = `rotate(${sRot + 180}deg)`;
 
     // Converting in 2 digits
     if (d.getDate() < 10) {
@@ -71,6 +73,8 @@ function showClock() {
     }
 
     // Printing date & format
-    dateStr = `<p>${hours}-${minutes}-${seconds} ${format}</p><p>${dateShow}/${monthShow}/${yearShow}</p>`;
+    dateStr = `<p>${hours}-${minutes}-${seconds} ${format}</p>
+                <hr>
+                <p>${dateShow}/${monthShow}/${yearShow}</p>`;
     time.innerHTML = dateStr;
 }

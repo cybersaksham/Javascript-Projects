@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Cheatsheet Template</title>
+    <!-- <link rel="stylesheet" href="./CSS/style.css"> -->
+    <link rel="stylesheet" href="../CSS/prism.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/prism.js"></script>
+    <style>
+        #p10,
+        #l2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../">Cheatsheet Template</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <div id="projectList"></div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Languages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./js.html">JS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <div id="languageList"></div>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" my-3 container">
+        <h3>My Snippets</h3>
+        <hr>
+        <h5 id="nothing">No snippet matched</h5>
+        <div class="accordion" id="accordionExample">
+            <div id="snippet1" class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Search Bar</button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <pre class="language-js"><code>let search = document.getElementById('search'); // search bar
+let nothing = document.getElementById('nothing'); // when no element matches to search bar value
+search.addEventListener('input', function () {
+    let inputVal = search.value.toLowerCase();
+    let elements = document.getElementsByClassName('elements'); // On which we want to perform search
+    let count = 0;
+    Array.from(elements).forEach(function (element) {
+        if (element.includes(inputVal)) {
+            count += 1;
+            nothing.style.display = 'none';
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    })
+    if (count == 0) {
+        nothing.style.display = 'block';
+    }
+})</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+<script src="../JS/index.js"></script>
+<script src="../JS/addLanguage.js"></script>
+<script src="../../JS/addProject2.js"></script>
+
+</html>

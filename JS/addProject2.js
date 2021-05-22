@@ -11,5 +11,7 @@ let projectStr = `<li id="p1"><a class="dropdown-item" href="../../P1_create_not
                     <li id="p7"><a class="dropdown-item" href="../../P7_calculator/">Calculator</a></li>
                     <li id="p8"><a class="dropdown-item" href="../../P8_clock/">Clock App</a></li>
                     <li id="p9"><a class="dropdown-item" href="../../P9_dino_game/">Dino Game</a></li>
-                    <li id="p10"><a class="dropdown-item" href="../../P10_cheatsheet_template/">Cheatsheet Template</a></li>`;
+                    <li id="p10"><a class="dropdown-item" href="../../P10_cheatsheet_template/">Cheatsheet Template
+                    <li id="p11"><a class="dropdown-item" href="../../P11_snake_game/">Snake Game
+                    </a></li>`;
 projectList.innerHTML = projectStr;

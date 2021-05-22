@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: 7vh;
+}
+
+.body {
+    background: url("../IMG/bg.jpg") no-repeat;
+    background-size: 100vw 93vh;
+    min-height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(rgb(151, 235, 151), rgb(233, 233, 151));
+    width: 85vmin;
+    height: 85vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(17, 1fr);
+    grid-template-columns: repeat(17, 1fr);
+}
+
+.head {
+    background: linear-gradient(red, yellow);
+    border: 2px solid white;
+    transform: scale(1.02);
+    border-radius: 9px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.snake {
+    background-color: purple;
+    border: 0.25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: 0.25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 10vh;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiScoreBox {
+    position: absolute;
+    top: 16vh;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiScoreCrack {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    padding: 0 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    position: absolute;
+    left: 45vw;
+}
+
+#gameOver {
+    background-color: red;
+    opacity: 0.7;
+    color: white;
+    padding: 0 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    position: absolute;
+    left: 45vw;
+}

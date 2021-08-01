@@ -13,5 +13,6 @@ let projectStr = `<li id="p1"><a class="dropdown-item" href="../../P1_create_not
                     <li id="p9"><a class="dropdown-item" href="../../P9_dino_game/">Dino Game</a></li>
                     <li id="p10"><a class="dropdown-item" href="../../P10_cheatsheet_template/">Cheatsheet Template
                     <li id="p11"><a class="dropdown-item" href="../../P11_snake_game/">Snake Game
+                    <li id="p12"><a class="dropdown-item" href="../../P12_windows11/">Windows 11
                     </a></li>`;
 projectList.innerHTML = projectStr;
